@@ -117,8 +117,8 @@
   .nav{position:absolute;top:0;left:0;right:0;z-index:60;background:transparent;border:none}
   .nav-inner{max-width:var(--maxw);margin-inline:auto;padding:1.4rem var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:1rem}
   .brand{display:flex;align-items:center;gap:.6rem;color:#fff}
-  .brand-logo{height:32px;width:auto;display:block}
-  @media(min-width:768px){.brand-logo{height:36px}}
+  .brand-logo{height:96px;width:auto;display:block}
+  @media(min-width:768px){.brand-logo{height:108px}}
   .nav-links{display:none}
   @media(min-width:1024px){
     .nav-links{display:flex;align-items:center;gap:.35rem}
@@ -354,6 +354,14 @@
 
   .audit-content{display:grid;gap:1.8rem}
   .audit-content > h2.head-slash{margin-bottom:.2rem}
+
+  /* case study section */
+  .case-grid{display:grid;gap:clamp(2rem,4vw,3rem);align-items:center}
+  @media(min-width:900px){.case-grid{grid-template-columns:1.6fr 1fr}}
+  .case-header{display:grid;gap:1rem}
+  .case-header h2.head-slash{max-width:none}
+  .case-figure{margin:0;border:1px solid var(--line);background:#fff;overflow:hidden;max-width:100%;justify-self:end}
+  .case-figure img{width:100%;height:auto;display:block}
   .lighthouse-quote{padding:1.8rem 0 1.8rem 2rem;border-left:2px solid var(--accent);color:var(--text);max-width:44ch;line-height:1.55;font-size:1.08rem;font-family:var(--f-display)}
   .lighthouse-quote strong{color:var(--accent);font-weight:600}
   .quote{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.35rem,3.4vw,2.1rem);line-height:1.35;color:var(--text);max-width:28ch;letter-spacing:.002em}
@@ -389,7 +397,6 @@
   .cc-th-empty{background:transparent}
   .cc-th-them{background:var(--bg-alt);color:var(--text-muted);display:flex;flex-direction:column;justify-content:flex-end;gap:.4rem}
   .cc-th-us{background:var(--accent);color:#fff;position:relative;border-left-color:var(--accent);display:flex;flex-direction:column;justify-content:flex-end;gap:.55rem;overflow:hidden}
-  .cc-th-us::after{content:"";position:absolute;top:-8%;right:-6%;width:110px;height:110px;background:url('https://dashboard.katalyst-crm.com/files/t1/loogoembl.png') no-repeat center/contain;opacity:.22;filter:brightness(0) invert(1);pointer-events:none;z-index:0}
   .cc-th-us > *{position:relative;z-index:1}
   .cc-th-lbl{font-family:var(--f-mono);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--text-light);font-weight:500}
   .cc-th-name{font-weight:600;font-size:1.08rem;letter-spacing:-.015em;color:inherit;line-height:1.15}
@@ -558,8 +565,8 @@
   .foot{display:grid;gap:2.4rem;padding-block:clamp(2.6rem,6vw,4rem)}
   @media(min-width:820px){.foot{grid-template-columns:1.5fr 1fr;align-items:end}}
   .foot-brand{display:flex;flex-direction:column;align-items:flex-start}
-  .foot-logo{height:44px;width:auto;display:block}
-  @media(min-width:768px){.foot-logo{height:52px}}
+  .foot-logo{height:132px;width:auto;display:block}
+  @media(min-width:768px){.foot-logo{height:156px}}
   .foot-meta{color:#9CA3AF;font-size:.86rem;line-height:1.75;font-family:var(--f-mono)}
   .foot-meta a{color:#fff}
   .foot-meta a:hover{color:var(--accent-2)}
@@ -800,7 +807,7 @@
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="#top" aria-label="SmartSphere Visibility Intelligence home">
-      <img class="brand-logo" src="https://cdn.katalyst-crm.com/t1/agency/smartsphere/logo-white.png" alt="SmartSphere Visibility Intelligence">
+      <img class="brand-logo" src="https://cdn.katalyst-crm.com/a/bedcd6b0-d44c-b3b6-8439-00a204eb99cb" alt="SmartSphere Visibility Intelligence">
     </a>
     <nav class="nav-links" aria-label="Primary">
       <a href="#top" class="active">[HOME]</a>
@@ -851,10 +858,10 @@
 <!-- ==== TRUST STRIP — credentials ==== -->
 <section class="trust-strip">
   <div class="wrap">
-    <p class="trust-title">Built by clinicians, for clinicians</p>
+    <p class="trust-title">Healthcare-informed. AI-engineered. Built specifically for clinics.</p>
     <div class="trust-items">
       <div class="trust-item"><span class="dot"></span>16 Years Patient Care Advocacy</div>
-      <div class="trust-item"><span class="dot"></span>Active RAMI Committee Member</div>
+      <div class="trust-item"><span class="dot"></span>Active RAMI Scientific Committee Follower</div>
       <div class="trust-item"><span class="dot"></span>Certified AI Growth Consultant</div>
       <div class="trust-item"><span class="dot"></span>Every Piece Clinically Reviewed</div>
     </div>
@@ -868,7 +875,7 @@
       <div>
         <h2 class="head-slash">Patients do not search<br>the way they used to.</h2>
         <div class="body-grid">
-          <p>A patient used to type <strong>"Botox London"</strong> into Google and scroll through ten results.</p>
+          <p>A patient used to type <strong>"rejuvenation"</strong> into Google and scroll through ten results.</p>
           <p>Now they ask an AI platform something closer to this: <strong>"I am over forty, researching exosome therapy for skin rejuvenation near Wimbledon, and I want a practitioner with real scientific safety credentials. Who is recommended?"</strong></p>
           <p>The AI does not hand back a list. It gives one confident answer, built from whichever clinic's information it can read and verify. If your treatments, credentials and location are not structured clearly online, the AI recommends whichever clinic it can read best, not necessarily the one that gives the best care.</p>
         </div>
@@ -892,7 +899,7 @@
   <div class="wrap">
     <div class="audit-grid">
       <div class="audit-image">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/ChatGPT%20Image%20Sep%202,%202026,%2004_25_14%20PM%201.png" alt="A tablet showing an AI search result recommending a single clinic" loading="lazy">
+        <img src="https://cdn.katalyst-crm.com/a/25673c93-bece-f28c-904b-c491997fa7e3" alt="A clinician reviewing patient-facing content on a tablet" loading="lazy">
       </div>
       <div class="audit-content">
         <h2 class="head-slash">Ranking on Google is not the same as being recommended by AI.</h2>
@@ -1039,19 +1046,19 @@
     <h2>What this looks like when it works.</h2>
     <div class="stats-grid">
       <div class="stat-cell">
-        <div class="n"><span class="count-prefix">+</span><span class="count-num" data-target="30" data-duration="1800">0</span> <span class="count-suffix">days</span></div>
+        <div class="n"><span class="count-prefix">+</span><span class="count-num" data-target="30" data-duration="1800">30</span> <span class="count-suffix">days</span></div>
         <div class="l">Report cadence — no 60-day wait</div>
       </div>
       <div class="stat-cell">
-        <div class="n"><span class="count-num" data-target="20" data-duration="1400">0</span> <span class="count-suffix">min</span></div>
+        <div class="n"><span class="count-num" data-target="20" data-duration="1400">20</span> <span class="count-suffix">min</span></div>
         <div class="l">Your monthly time to review &amp; approve</div>
       </div>
       <div class="stat-cell">
-        <div class="n"><span class="count-num" data-target="5" data-duration="1000">0</span> <span class="count-suffix">wks</span></div>
+        <div class="n"><span class="count-num" data-target="5" data-duration="1000">5</span> <span class="count-suffix">wks</span></div>
         <div class="l">Custom AI Content Engine, start to finish</div>
       </div>
       <div class="stat-cell">
-        <div class="n"><span class="count-num" data-target="100" data-duration="2200">0</span><span class="count-suffix">%</span></div>
+        <div class="n"><span class="count-num" data-target="100" data-duration="2200">100</span><span class="count-suffix">%</span></div>
         <div class="l">Patient-facing content clinically screened</div>
       </div>
     </div>
@@ -1149,7 +1156,7 @@
         </div>
         <div class="cc-th cc-th-us">
           <span class="cc-badge">Recommended</span>
-          <span class="cc-th-name">SmartSphere<sup>™</sup></span>
+          <span class="cc-th-name">Visibility Intelligence</span>
         </div>
       </div>
 
@@ -1191,7 +1198,7 @@
         <div class="cc-us">
           <span class="cc-mark good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m20 7-11 11-5-5"/></svg></span>
           <span class="cc-lbl cc-lbl-us">SmartSphere</span>
-          <p>Reviewed from a healthcare-informed perspective by an EU-certified nurse and active RAMI Scientific Committee member.</p>
+          <p>Reviewed from a healthcare-informed perspective by a Qualified Registered Nurse (Hungary, Szent-Gyorgy-Albert Nursing Vocational High School, 1991) and an active follower of the RAMI Scientific Committee.</p>
         </div>
       </div>
 
@@ -1237,9 +1244,9 @@
         <span class="eyebrow">Two sides, one system</span>
         <h2 class="head founders-head">Built by a nurse and an AI consultant who have lived both sides of this.</h2>
         <div class="body-grid" style="max-width:60ch">
-          <p>Hilda Beck spent years as an EU-certified nurse before she spent years searching for answers as a mother. When her son Noah faced a serious childhood health setback, she researched relentlessly and found the right combination of holistic and functional medicine practitioners to help him recover. His family never let that setback define what he could achieve.</p>
+          <p>Hilda Beck spent years as a Qualified Registered Nurse (Hungary, Szent-Gyorgy-Albert Nursing Vocational High School, 1991) before she spent years searching for answers as a mother. When her son Noah faced a serious childhood health setback, she researched relentlessly and found the right combination of holistic and functional medicine practitioners to help him recover. His family never let that setback define what he could achieve.</p>
           <p>That journey is why SmartSphere Visibility Intelligence exists. Hilda and Noah have sat in clinic waiting rooms as patients whose lives depended on finding the right practitioner. They know what it costs a family when they cannot find the specialist who could actually help. They know what it means when they finally do.</p>
-          <p>Today, Hilda brings sixteen years of patient care advocacy and an active seat on the RAMI Scientific Committee to every piece of content SmartSphere Visibility Intelligence produces. Noah is a Certified AI Business Growth Consultant, trained under Kane Minkus, a 40X serial entrepreneur and bestselling author, and builds the technical systems that make your clinic easy for AI search engines to find.</p>
+          <p>Today, Hilda brings sixteen years of patient care advocacy and active involvement as a follower of the RAMI Scientific Committee to every piece of content SmartSphere Visibility Intelligence produces. Noah is a Certified AI Business Growth Consultant, trained under Kane Minkus, a 40X serial entrepreneur and bestselling author, and builds the technical systems that make your clinic easy for AI search engines to find.</p>
         </div>
         <div class="synergy">
           <div class="s c"><i></i>One of them protects clinical accuracy.</div>
@@ -1248,6 +1255,21 @@
         </div>
 
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==== 10.5 CASE STUDY — ONGOING ==== -->
+<section class="section" id="case-study">
+  <div class="wrap">
+    <div class="case-grid">
+      <div class="case-header">
+        <span class="eyebrow">Work in progress, in the open</span>
+        <h2 class="head-slash">Our methodology, live on an active client project.</h2>
+      </div>
+      <figure class="case-figure">
+        <img src="https://cdn.katalyst-crm.com/a/5349fb5c-df52-dddc-980d-f62fc6a1cbbf" alt="Strategic AEO Visibility framework — ongoing client project" loading="lazy">
+      </figure>
     </div>
   </div>
 </section>
@@ -1266,7 +1288,7 @@
       </div>
       <div class="gov-visual">
         <div class="gov-photo">
-          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260902_091434_7c59a719-3e66-49ba-b68e-17eb63e9492f.png" alt="A modern minimalist aesthetic medicine clinic interior">
+          <img src="https://d8j0ntlcm91z4.cloudfront.net/user_35NBuSfIPglHIOMZxxqoxDRFcyj/hf_20260910_110532_7af0586a-dead-450f-9d65-72a45c1a325d.png" alt="Clinician in a modern aesthetic clinic, representing healthcare-informed content review">
         </div>
         <div class="gov-tag"><i></i>Built for clinics that hold the line</div>
         <div class="guardrail guardrail-float">
@@ -1307,7 +1329,7 @@
       </div>
       <div class="qa" aria-expanded="false">
         <button type="button"><span class="pm"></span>How do I know this is not just another chatbot risk?</button>
-        <div class="ans"><p>Because an active member of the RAMI Scientific Committee checks every piece of clinical content from a healthcare informed perspective before it ever reaches a patient. Final approval always stays with you.</p></div>
+        <div class="ans"><p>Because an active follower of the RAMI Scientific Committee checks every piece of clinical content from a healthcare informed perspective before it ever reaches a patient. Final approval always stays with you.</p></div>
       </div>
       <div class="qa" aria-expanded="false">
         <button type="button"><span class="pm"></span>Do you have case studies or results to show?</button>
@@ -1318,15 +1340,11 @@
 </section>
 
 <!-- ==== 13. CLOSE — CTA BOX ==== -->
-<section class="section" id="close">
+<section class="section" id="close" style="padding-block:clamp(2rem,4vw,3.5rem)">
   <div class="wrap">
     <div class="close-header">
       <div class="close-header-text">
-        <span class="eyebrow">An inch of movement</span>
-        <h2 class="head" style="max-width:22ch">An inch of movement is better<br>than a mile of intentions.</h2>
-      </div>
-      <div class="close-float" aria-hidden="true">
-        <img src="https://dashboard.katalyst-crm.com/files/t1/ChatGPT%20Image%20Sep%202,%202026,%2004_48_19%20PM.png" alt="" loading="lazy">
+        <h2 class="head" style="max-width:22ch">Make AI Your Trusted Visibility</h2>
       </div>
     </div>
     <div class="cta-two-paths">
@@ -1375,7 +1393,7 @@
 <footer>
   <div class="wrap foot">
     <div class="foot-brand">
-      <img class="foot-logo" src="https://cdn.katalyst-crm.com/t1/agency/smartsphere/logo-white.png" alt="SmartSphere Visibility Intelligence">
+      <img class="foot-logo" src="https://cdn.katalyst-crm.com/a/bedcd6b0-d44c-b3b6-8439-00a204eb99cb" alt="SmartSphere Visibility Intelligence">
     </div>
     <div class="foot-meta">
       SmartSphere Global Limited<br>
@@ -1508,7 +1526,10 @@
     var wrap=document.querySelector('.engine-cards');
     if(wrap)wrap.classList.add('animate');
   }
-  /* ==== NUMBER COUNTING ANIMATION ==== */
+  /* ==== NUMBER COUNTING ANIMATION ====
+     Note: HTML source now ships the real final values (e.g. 30, 20, 5, 100)
+     so AI crawlers and non-JS clients read the correct numbers.
+     JS resets to 0 in-browser purely to run the count-up effect. */
   var counters=document.querySelectorAll('.count-num[data-target]');
   if(supportsIO&&counters.length){
     var counted=false;
@@ -1520,6 +1541,7 @@
             var target=parseInt(el.getAttribute('data-target'),10);
             var duration=parseInt(el.getAttribute('data-duration')||'1600',10);
             var delay=i*200;
+            el.textContent='0';
             setTimeout(function(){animateCount(el,target,duration);},delay);
           });
           counterObs.disconnect();
@@ -1527,8 +1549,6 @@
       });
     },{threshold:0.3});
     counterObs.observe(document.querySelector('.stats-grid'));
-  }else{
-    counters.forEach(function(el){el.textContent=el.getAttribute('data-target');});
   }
 
   function animateCount(el,target,duration){
