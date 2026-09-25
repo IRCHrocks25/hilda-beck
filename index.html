@@ -173,10 +173,10 @@
   .hero-main{position:relative;z-index:3;padding:0 0 clamp(2rem,5vh,4rem);width:100%}
   @media(min-width:768px){.hero-main{padding:0 0 clamp(2.5rem,6vh,4.5rem)}}
   @media(max-width:639px){
-    .hero{min-height:82vh;min-height:82svh}
+    .hero{min-height:clamp(460px,62svh,600px)}
     .hero-main{padding:0 0 1.6rem}
-    .hero-sub{margin-top:1rem;font-size:1rem}
-    .hero-cta-row{margin-top:1.5rem}
+    .hero-sub{margin-top:.9rem;font-size:1rem}
+    .hero-cta-row{margin-top:1.3rem}
   }
   .hero .wrap{max-width:none;margin-inline:0;padding-left:clamp(1.15rem,3.5vw,3rem);padding-right:clamp(1.15rem,3.5vw,3rem)}
   .hero-headline-block{max-width:none}
